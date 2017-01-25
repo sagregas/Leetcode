@@ -25,7 +25,7 @@ public:
 
     /** Get the front element. */
     int peek() {
-        if(popStk.empty() && !pushStk.empty()){
+        if(popStk.empty()){
             while(!pushStk.empty()){
                 popStk.push(pushStk.top());
                 pushStk.pop();
